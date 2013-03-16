@@ -1,4 +1,0 @@
-Mittelpunkt-Europa
-==================
-
-Mittelpunkt-Europa
