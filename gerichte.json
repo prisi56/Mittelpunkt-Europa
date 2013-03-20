@@ -1,0 +1,159 @@
+{
+         "gerichte": [
+                 {
+                 "name": "Leberkn\u00f6delsuppe",
+                 "bild": "gericht1.jpg",
+                 "untertitel": "Leberkn\u00f6del hausgemacht"
+                 },
+                 {
+                 "name": "Nudelsuppe",
+                 "bild": "gericht2.jpg",
+                 "untertitel": "&nbsp;"
+                 },
+                 {
+                 "name": "Frittatensuppe",
+                 "bild": "gericht3.jpg",
+                 "untertitel": "Frittaten hausgemacht"
+                 },
+                 {
+                 "name": "Tomatencremesuppe",
+                 "bild": "gericht11.jpg",
+                 "untertitel": "Mit Kr\u00e4utertopfenstrudel"
+                 },
+                 {
+                 "name": "W\u00fcrsteltopf",
+                 "bild": "gericht4.jpg",
+                 "untertitel": "Mit Nudeln und Gem\u00fcse"
+                 },
+                 {
+                 "name": "Beilagensalat",
+                 "bild": "gericht5.jpg",
+                 "untertitel": "&nbsp;"
+                 },
+                 {
+                 "name": "Bunter Salat",
+                 "bild": "gericht6.jpg",
+                 "untertitel": "Mit gebackenen Putenstreifen"
+                 },
+                 {
+                 "name": "Fitnessalat",
+                 "bild": "gericht7.jpg",
+                 "untertitel": "Mit gebratenen Putenstreifen"
+                 },
+                 {
+                 "name": "Salatplatte",
+                 "bild": "gericht8.jpg",
+                 "untertitel": "&nbsp;"
+                 },
+                 {
+                 "name": "Schweizer Wurstsalat",
+                 "bild": "gericht9.jpg",
+                 "untertitel": "Auf Blattsalat serviert"
+                 },
+                 {
+                 "name": "Salat Nizza",
+                 "bild": "gericht10.jpg",
+                 "untertitel": "Mit Thunfisch und Oliven"
+                 },
+                 {
+                 "name": "Cordon Bleu",
+                 "bild": "gericht12.jpg",
+                 "untertitel": "Von der Pute mit Pommes und Preiselbeeren"
+                 },
+                 {
+                 "name": "Forelle gebraten",
+                 "bild": "gericht13.jpg",
+                 "untertitel": "Aus dem Mattigtal"
+                 },
+                 {
+                 "name": "Innviertler Surbraten",
+                 "bild": "gericht14.jpg",
+                 "untertitel": "Mit Semmelkn\u00f6del und Kartoffeln"
+                 },
+                 {
+                 "name": "Kr\u00e4uterschnitzel gebraten",
+                 "bild": "gericht15.jpg",
+                 "untertitel": "Gef\u00f6llt mit Schinken und K\u00e4se"
+                 },
+                 {
+                 "name": "Rahmgeschnetzeltes",
+                 "bild": "gericht16.jpg",
+                 "untertitel": "Mit Kr\u00e4uternudel"
+                 },
+                 {
+                 "name": "Wiener Schnitzel",
+                 "bild": "gericht17.jpg",
+                 "untertitel": "Vom Schwein"
+                 },
+                 {
+                 "name": "Grillplatte",
+                 "bild": "gericht18.jpg",
+                 "untertitel": "Nach Art des Hauses"
+                 },
+                 {
+                 "name": "Rehr\u00fcckenfilet",
+                 "bild": "gericht19.jpg",
+                 "untertitel": "In Bl\u00e4tterteigmantel"
+                 },
+                 {
+                 "name": "Cevapcici",
+                 "bild": "gericht20.jpg",
+                 "untertitel": "Hausgemacht"
+                 },
+                 {
+                 "name": "Hausgemachte Blutwurst",
+                 "bild": "gericht21.jpg",
+                 "untertitel": "Mit Bratkartoffel und InnWirtler Sauerkraut"
+                 },
+                 {
+                 "name": "G\u00e4nseleberstrudel",
+                 "bild": "gericht22.jpg",
+                 "untertitel": "Auf Blattsalat"
+                 },
+                 {
+                 "name": "Gem\u00fcseschnitzel",
+                 "bild": "gericht23.jpg",
+                 "untertitel": "Sauce Tatare"
+                 },
+                 {
+                 "name": "Ungarisches Saftgulasch",
+                 "bild": "gericht24.jpg",
+                 "untertitel": "&nbsp;"
+                 },
+                 {
+                 "name": "Niere ger\u00f6stet",
+                 "bild": "gericht25.jpg",
+                 "untertitel": "In Rahmsauce"
+                 },
+                 {
+                 "name": "Essigwurst",
+                 "bild": "gericht26.jpg",
+                 "untertitel": "&nbsp;"
+                 },
+                 {
+                 "name": "Haussulz",
+                 "bild": "gericht27.jpg",
+                 "untertitel": "Fein garniert aus eigener Metzgerei"
+                 },
+                 {
+                 "name": "Jausenplatte",
+                 "bild": "gericht28.jpg",
+                 "untertitel": "Fein garniert"
+                 },
+                 {
+                 "name": "Apfel-Topfenstrudel",
+                 "bild": "gericht29.jpg",
+                 "untertitel": "Mit Eis"
+                 },
+                 {
+                 "name": "Pofesen",
+                 "bild": "gericht30.jpg",
+                 "untertitel": "Hausgemacht"
+                 },
+                 {
+                 "name": "Marmelade Palatschinken",
+                 "bild": "gericht31.jpg",
+                 "untertitel": "&nbsp;"
+                 }
+                 ]
+         }

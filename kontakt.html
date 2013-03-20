@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Mittelpunkt Europa</title>
+<meta name="author" content="prisi">
+<meta name="editor" content="html-editor phase 5">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<!--Einbindung von JQuery Mobile -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.css" />
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+ google.load("maps", "3",{'other_params':'sensor=true'});
+</script>
+<script src="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.js"></script>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="http://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/csss?family=Noticia+Text" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- Kontakt Seite -->
+<div data-role="page" id="kontakt">
+
+
+
+        <div data-role="content" id="kontakt-inhalt">
+
+                   <form id="kontaktformular">
+                           <div data-role="fieldcontain">
+                                <label for="name">Name:</label>
+                                <input type="text" name="name" id="name" value="" />
+                        </div>
+
+                        <div data-role="fieldcontain">
+                                <label for="email">E-Mail:</label>
+                                <input type="email" name="email" id="email" value="" />
+                        </div>
+
+                        <div data-role="fieldcontain">
+                                <label for="telefon">Telefon:</label>
+                                <input type="tel" name="telefon" id="telefon" value="" />
+                        </div>
+
+                        <div data-role="fieldcontain">
+                                <label for="artanfrage">Art der Anfrage:</label>
+                                <select name="artanfrage" id="artanfrage">
+                                         <option value="Reservierung">Reservierung</option>
+                                          <option value="Hinweis">Anfrage</option>
+                                </select>
+                        </div>
+
+                        <div data-role="fieldcontain">
+                                <label for="name">Anfrage:</label>
+                                <textarea name="anfrage" id="anfrage" value=""></textarea>
+                        </div>
+                        <div data-role="fieldcontain">
+                                <label for="anreisetag">Anreisetag:</label>
+                                <select name="anreisetag" id="anreisetag">
+                                         <option value="Tag">Tag</option>
+                                          <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="02">13</option>
+                                        <option value="03">14</option>
+                                        <option value="04">15</option>
+                                        <option value="05">16</option>
+                                        <option value="06">17</option>
+                                        <option value="07">18</option>
+                                        <option value="08">19</option>
+                                        <option value="09">20</option>
+                                        <option value="10">21</option>
+                                        <option value="11">22</option>
+                                        <option value="12">23</option>
+                                        <option value="12">24</option>
+                                        <option value="02">25</option>
+                                        <option value="03">26</option>
+                                        <option value="04">27</option>
+                                        <option value="05">28</option>
+                                        <option value="06">29</option>
+                                        <option value="07">30</option>
+                                        <option value="08">31</option>
+                                </select>
+
+                                <label for="anreisemonat">Anreisemonat:</label>
+                                <select name="anreisemonat" id="anreisemonat">
+                                         <option value="Monat">Monat</option>
+                                          <option value="Jan">Jan</option>
+                                        <option value="Feb">Feb</option>
+                                        <option value="Mar">Mar</option>
+                                        <option value="Apr">Apr</option>
+                                        <option value="Mai">Mai</option>
+                                        <option value="Jun">Jun</option>
+                                        <option value="Jul">Jul</option>
+                                        <option value="Aug">Aug</option>
+                                        <option value="Sep">Sep</option>
+                                        <option value="Okt">Okt</option>
+                                        <option value="Nov">Nov</option>
+                                        <option value="Dez">Dez</option>
+                                </select>
+
+                                <label for="anreisejahr">Anreisejahr:</label>
+                                <select name="anreisejahr" id="anreisejahr">
+                                         <option value="Jahr">Jahr</option>
+                                          <option value="2013">2013</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">2018</option>
+                                </select>
+                        </div>
+                        <div data-role="fieldcontain">
+                                <label for="naechte">N&auml;chte:</label>
+                                <input type="text" name="naechte" id="naechte" value="" />
+                        </div>
+                        <div data-role="fieldcontain">
+                                <label for="zimmerart">Zimmerart:</label>
+                                <select name="zimmerart" id="zimmerart">
+                                <option value="zimmerart">Zimmerart</option>
+                                         <option value="Doppelzimmer">Doppelzimmer</option>
+                                          <option value="Einzelzimmer">Einzelzimmer</option>
+                                </select>
+                        </div>
+
+                        <button type="submit" data-theme="a" id="submitform">Abschicken</button>
+
+                   </form>
+                   <div style="height:50px;">&nbsp;</div>
+                    <div data-role="footer" data-id="footernav" data-tap-toggle="false" data-position="fixed" data-theme="b">
+                <div data-role="navbar" data-theme="b">
+                       <ul>
+<li><a href="menue.html" data-icon="menue" data-transition="fade">Men&uuml;</a></li>
+<li><a href="kontakt.html" data-icon="kontakt" data-transition="fade" class="ui-btn-active">Kontakt</a></li>
+<li><a href="anfahrt.html" data-icon="anfahrt" data-transition="fade">Anfahrt</a></li></ul>
+                </div><!-- /navbar -->
+        </div><!-- div content -->
+
+
+
+
+
+<script type="text/javascript">
+
+//Formdaten an PHP-Datei senden
+        $("form#kontaktformular").submit(function() {
+        // we want to store the values from the form input box, then send via ajax below
+        var name = $('#name').attr('value');
+        var email = $('#email').attr('value');
+        var telefon = $('#telefon').attr('value');
+        var artanfrage = $('#artanfrage').attr('value');
+        var anfrage  = $('#anfrage').attr('value');
+        var anreisetag = $('#anreisetag').attr('value');
+        var anreisemonat = $('#anreisemonat').attr('value');
+        var anreisejahr = $('#anreisejahr').attr('value');
+        var naechte = $('#naechte').attr('value');
+        var zimmerart = $('#zimmerart').attr('value');
+
+                $.ajax({
+                        type: "get",
+                        url: "submitform.php",
+                        data: "name="+ name +"&email="+ email+"&telefon="+ telefon+"&artanfrage="+ artanfrage+"&anfrage="+ anfrage+"&anreisetag="+ anreisetag+"&anreisemonat="+ anreisemonat+"&anreisejahr="+ anreisejahr+"&naechte="+ naechte+"&zimmerart="+ zimmerart,
+                        success: function(){
+                                $.mobile.changePage("kontakt-erfolgreich.html", { transition: "flip"} );
+                                alert('versendet');
+                        }
+                });
+        return false;
+        });
+
+
+</script>
+
+
+</div><!-- /page -->
+
+
+
+
+<!-- Formular erfolgreich abgesendet -->
+<div data-role="page" id="kontaktsuccess">
+
+        <div data-role="content" id="kontakt-success-inhalt">
+
+                <h3>Vielen Dank f&uuml;r Ihre Anfrage!</h3>
+
+        </div><!-- div content -->
+
+
+        <div data-role="footer" data-id="footernav" data-tap-toggle="false" data-position="fixed" data-theme="b">
+                <div data-role="navbar" data-theme="b">
+                       <ul>
+<li><a href="menue.html" data-icon="menue" data-transition="fade">Men&uuml;</a></li>
+<li><a href="kontakt.html" data-icon="kontakt" data-transition="fade" class="ui-btn-active">Kontakt</a></li>
+<li><a href="anfahrt.html" data-icon="anfahrt" data-transition="fade">Anfahrt</a></li></ul>
+                </div><!-- /navbar -->
+    </div><!-- /footer -->
+
+
+
+</div><!-- /page -->
+
+
+
+
+</body>
+</html>

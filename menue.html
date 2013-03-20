@@ -26,27 +26,39 @@
 <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-<div data-role="page" id="start">
-<div data-role="content">
-<img src="images/Gasthaus.jpg" class="schatten" />
-<h3>Willkommen im Mittelpunkt von Europa!</h3>
-Wir begr&uuml;&szlig;en Sie recht herzlich im Gasthof  &ldquo;Mittelpunkt-Europa&rdquo;, der Betrieb ist seit Generationen in Familienbesitz.  <br /><br />
-Der Gasthof liegt im sch&ouml;nen &ldquo;Mattigtal&rdquo;
-zwischen Braunau am Inn und Mattighofen auf der
-B147 im Voralpenland. <br /><br />
-Schnell zu erreichen von Salzburg, Linz, Passau, und M&uuml;nchen.
-Wir legen gro&szlig;en Wert auf ein gepflegtes und gem&uuml;tliches Ambiente f&uuml;r Ihr Wohlbefinden. <br /><br />
-Der Gasthof ist weit &uuml;ber die Landesgrenze hinaus f&uuml;r seine Gastlichkeit bekannt, und wird von Jung und Alt sehr gesch&auml;tzt.<br /> <br />
-Unsere <a href="http://www.mittelpunkt-europa.at/app/zimmer.html">Zimmer</a> sind auf dem neuesten Stand,
-die <a href="http://www.mittelpunkt-europa.at/app/menue.html">K&uuml;che</a> traditionell, und ausgewogen.
+<!-- Menue Seite -->
+<div data-role="page" id="menue">
+<div data-role="header" data-theme="b" data-position="fixed" data-tap-toggle="false" >
+<a href="index.html" data-role="button" data-icon="home" data-iconpos="notext">Dieser Text wird nicht angezeigt</a>
+<h2>Unser Men&uuml;</h2>
 </div>
+<div data-role="content">
+                <!-- Liste der Gerichte -->
+                <ul id="gerichteliste" data-role="listview">
+                       <!-- Hier werden die JSON Daten hineingeladen -->
+                </ul>
+</div><!--div content-->
 <div data-role="footer" data-id="footernav" data-tap-toggle="false" data-position="fixed" data-theme="b">
 <div data-role="navbar" data-theme="b">
 <ul>
-<li><a href="menue.html" data-icon="menue" data-transition="fade">Men&uuml;</a></li>
+<li><a href="menue.html" data-icon="menue" data-transition="fade" class="ui-btn-active">Men&uuml;</a></li>
 <li><a href="kontakt.html" data-icon="kontakt" data-transition="fade">Kontakt</a></li>
 <li><a href="anfahrt.html" data-icon="anfahrt" data-transition="fade">Anfahrt</a></li>
-</ul></div>
-<!-- /navbar/  --></div><!-- /footer/  --></div>
+</ul>
+</div><!-- /navbar/  -->
+</div><!-- /footer/  -->
+<script type="text/javascript">
+$('#menue').on("pageshow", function() {
+
+        $('#gerichteliste').empty();
+
+        $.getJSON('gerichte.json', function(data) {
+                $.each(data.gerichte, function(i,item){
+                          $('<li><a href="gericht-detail.html" data-transition="slide" onClick="javascript:sessionStorage.gericht=\''+item.name+'\';"><img src="bilder/'+item.bild+'" /><h3>' + item.name + '</h3>' + '<p>' + item.untertitel + '</p></a></li>').appendTo('#gerichteliste');
+                });
+                $('#gerichteliste').listview('refresh');
+        });
+});
+</script></div><!-- /page -->
 </body>
 </html>
