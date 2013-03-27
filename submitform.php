@@ -14,7 +14,7 @@ if (isset($_GET["name"])) {
         $zimmerart = strip_tags($_GET['zimmerart']);
         $header = "Von: ". name . " <" . $email . ">rn";
 
-        $empfaenger = 'prisi@aon.at';
+        $empfaenger = 'office@mittelpunkt-europa.at';
         $titel = 'Das Kontaktformular wurde ausgeführt';
         $mailtext = "
         Name: $name
